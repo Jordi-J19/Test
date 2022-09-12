@@ -1,0 +1,14 @@
+def kmer(sequence, 3):
+  length=len(sequence)
+ #if the kmer size if greater than the lenght of the sequene
+  if 3>=length:
+    print ("You specified a kmer size, which if greater or equal to the length of the sequence")
+    return 
+  stepsize=3-1
+  i=0
+  kmers=[]
+  while i+stepsize<length:
+    kmers.append(sequence[i:i+3])
+    i+=1
+  print (kmers)
+  
